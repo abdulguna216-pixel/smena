@@ -1600,3 +1600,104 @@ body.has-service-dialog {
   .staff-list {grid-template-columns:1fr;margin-bottom:24px}
   .staff-list li {font-size:12px;padding-block:11px}
 }
+
+/* The existing process and advantage layouts also act as detail buttons. */
+.step,.advantage {
+  position:relative;
+}
+.detail-trigger {
+  display:inline;
+  border:0;
+  padding:0;
+  background:transparent;
+  color:inherit;
+  font:inherit;
+  letter-spacing:inherit;
+  line-height:inherit;
+  text-align:left;
+  cursor:pointer;
+}
+.detail-trigger[hidden] {
+  display:none;
+}
+.has-detail-dialog .detail-static {
+  display:none;
+}
+.detail-trigger::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:1;
+  border-radius:4px;
+}
+.detail-trigger:focus-visible {
+  outline:none;
+}
+.detail-trigger:focus-visible::after {
+  outline:3px solid currentColor;
+  outline-offset:6px;
+}
+.point-fallback {
+  grid-column:1/-1;
+  position:relative;
+  z-index:2;
+}
+.process .point-fallback {
+  border-color:rgba(255,218,185,.35);
+}
+.process .point-fallback .service-detail-description {
+  color:var(--peach);
+}
+.step.has-detail-dialog,.advantage.has-detail-dialog {
+  cursor:pointer;
+}
+.step.has-detail-dialog::before,.advantage.has-detail-dialog::before {
+  content:'';
+  position:absolute;
+  inset:0 -12px -12px;
+  border-radius:8px;
+  background:currentColor;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .2s;
+}
+.step.has-detail-dialog:hover::before,.advantage.has-detail-dialog:hover::before {
+  opacity:.04;
+}
+.step-mark {
+  align-self:start;
+  transition:transform .2s;
+}
+.step.has-detail-dialog:hover .step-mark {
+  transform:translate(3px,-3px);
+}
+.advantage-mark {
+  display:none;
+  position:absolute;
+  right:0;
+  top:25px;
+  width:36px;
+  height:36px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  place-items:center;
+  font-size:23px;
+  line-height:1;
+  transition:background .2s,color .2s,transform .2s;
+}
+.advantage.has-detail-dialog .advantage-mark {
+  display:grid;
+}
+.advantage.has-detail-dialog h3 {
+  padding-right:38px;
+}
+.advantage.has-detail-dialog:hover .advantage-mark {
+  color:var(--peach);
+  background:var(--blue);
+  transform:rotate(8deg);
+}
+@media(max-width:650px) {
+  .advantage-mark {width:28px;height:28px;font-size:20px;top:25px}
+  .advantage.has-detail-dialog h3 {padding-right:30px}
+  .step.has-detail-dialog::before,.advantage.has-detail-dialog::before {inset:0 -6px -8px}
+}

@@ -40,7 +40,7 @@
   // Content always starts visible. Animate only elements entering the viewport.
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-  // Keep service details readable without JavaScript, then enhance them to
+  // Keep all detail descriptions readable without JavaScript, then enhance to
   // native dialogs with focus trapping, Escape handling and focus restoration.
   if ('HTMLDialogElement' in window && typeof HTMLDialogElement.prototype.showModal === 'function') {
     document.querySelectorAll('[data-service-details]').forEach((trigger) => {
@@ -57,7 +57,7 @@
       const closeButton = document.createElement('button');
       closeButton.type = 'button';
       closeButton.className = 'dialog-close';
-      closeButton.setAttribute('aria-label', 'Закрыть описание услуги');
+      closeButton.setAttribute('aria-label', 'Закрыть описание');
       closeButton.textContent = '×';
       closeButton.autofocus = true;
       inner.append(closeButton, content);
@@ -66,6 +66,7 @@
       fallback.hidden = true;
       trigger.setAttribute('aria-controls', dialog.id);
       trigger.hidden = false;
+      trigger.closest('.step, .advantage')?.classList.add('has-detail-dialog');
 
       let closing = false;
       const closeDialog = () => {

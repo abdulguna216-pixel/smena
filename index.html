@@ -109,9 +109,45 @@
           <a class="text-link process-link" href="tel:+79261704060">Обсудить задачу <span aria-hidden="true">↗</span></a>
         </div>
         <ol class="steps">
-          <li class="step reveal"><span class="step-number" aria-hidden="true">01</span><div><h3>Обсуждаем задачу</h3><p>Вы рассказываете, для каких процессов нужен персонал.</p></div><span class="step-mark" aria-hidden="true">↗</span></li>
-          <li class="step reveal"><span class="step-number" aria-hidden="true">02</span><div><h3>Уточняем потребность</h3><p>Обсуждаем требования и условия сотрудничества.</p></div><span class="step-mark" aria-hidden="true">↗</span></li>
-          <li class="step reveal"><span class="step-number" aria-hidden="true">03</span><div><h3>Согласовываем<br>дальнейшие действия</h3><p>Вместе определяем подходящий порядок работы.</p></div><span class="step-mark" aria-hidden="true">↗</span></li>
+          <li class="step reveal">
+            <span class="step-number" aria-hidden="true">01</span>
+            <div><h3><button class="detail-trigger" type="button" data-service-details="step-task-details" aria-haspopup="dialog" hidden>Обсуждаем задачу</button><span class="detail-static">Обсуждаем задачу</span></h3><p>Вы рассказываете, для каких процессов нужен персонал.</p></div>
+            <span class="step-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="step-task-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Как работаем / 01</p>
+                <h2 id="step-task-detail-title">Обсуждаем задачу</h2>
+                <p class="service-detail-description">Вы рассказываете, для каких складских или производственных процессов нужны сотрудники. Вместе уточняем задачи, предполагаемый объём работ и особенности объекта. Это помогает определить потребность в персонале.</p>
+              </div>
+            </details>
+          </li>
+          <li class="step reveal">
+            <span class="step-number" aria-hidden="true">02</span>
+            <div><h3><button class="detail-trigger" type="button" data-service-details="step-needs-details" aria-haspopup="dialog" hidden>Уточняем потребность</button><span class="detail-static">Уточняем потребность</span></h3><p>Обсуждаем требования и условия сотрудничества.</p></div>
+            <span class="step-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="step-needs-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Как работаем / 02</p>
+                <h2 id="step-needs-detail-title">Уточняем потребность</h2>
+                <p class="service-detail-description">Обсуждаем требования к сотрудникам и рабочим процессам на вашем объекте. Уточняем необходимый состав персонала и организационные условия. На этой основе рассматриваем подходящий формат сотрудничества.</p>
+              </div>
+            </details>
+          </li>
+          <li class="step reveal">
+            <span class="step-number" aria-hidden="true">03</span>
+            <div><h3><button class="detail-trigger" type="button" data-service-details="step-agreement-details" aria-haspopup="dialog" hidden>Согласовываем<br>дальнейшие действия</button><span class="detail-static">Согласовываем<br>дальнейшие действия</span></h3><p>Вместе определяем подходящий порядок работы.</p></div>
+            <span class="step-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="step-agreement-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Как работаем / 03</p>
+                <h2 id="step-agreement-detail-title">Согласовываем дальнейшие действия</h2>
+                <p class="service-detail-description">Подводим итоги обсуждения и согласовываем условия сотрудничества. Вместе определяем последовательность дальнейших действий и порядок взаимодействия. Необходимые детали уточняем до начала работы.</p>
+              </div>
+            </details>
+          </li>
         </ol>
       </div>
     </section>
@@ -125,19 +161,55 @@
         <div class="advantages-grid">
           <article class="advantage reveal">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="m28 4-18 23h13l-3 17 18-24H25l3-16Z"/></svg>
-            <h3>Оперативный вывод<br>персонала</h3>
+            <h3><button class="detail-trigger" type="button" data-service-details="benefit-speed-details" aria-haspopup="dialog" hidden>Оперативный вывод<br>персонала</button><span class="detail-static">Оперативный вывод<br>персонала</span></h3>
+            <span class="advantage-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="benefit-speed-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Почему мы / 01</p>
+                <h2 id="benefit-speed-detail-title">Оперативный вывод персонала</h2>
+                <p class="service-detail-description">Обсуждаем, когда и для каких процессов вашему объекту нужен персонал. Порядок выхода сотрудников и необходимые условия согласовываем под задачу. Конкретные сроки определяем после уточнения потребности.</p>
+              </div>
+            </details>
           </article>
           <article class="advantage reveal">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4c-6 5-12 7-18 8v13c0 9 8 15 18 19 10-4 18-10 18-19V12c-6-1-12-3-18-8Z"/><path d="m16 24 6 6 11-12"/></svg>
-            <h3>Оформление<br>по ТК РФ</h3>
+            <h3><button class="detail-trigger" type="button" data-service-details="benefit-employment-details" aria-haspopup="dialog" hidden>Оформление<br>по ТК РФ</button><span class="detail-static">Оформление<br>по ТК РФ</span></h3>
+            <span class="advantage-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="benefit-employment-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Почему мы / 02</p>
+                <h2 id="benefit-employment-detail-title">Оформление по ТК РФ</h2>
+                <p class="service-detail-description">Сотрудники оформляются в соответствии с ТК РФ. Организационные вопросы оформления и взаимодействия с вашей компанией обсуждаем при согласовании сотрудничества.</p>
+              </div>
+            </details>
           </article>
           <article class="advantage reveal">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="13" r="8"/><path d="M6 44v-4c0-10 7-16 18-16s18 6 18 16v4"/></svg>
-            <h3>Персональный менеджер<br>на объект</h3>
+            <h3><button class="detail-trigger" type="button" data-service-details="benefit-manager-details" aria-haspopup="dialog" hidden>Персональный менеджер<br>на объект</button><span class="detail-static">Персональный менеджер<br>на объект</span></h3>
+            <span class="advantage-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="benefit-manager-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Почему мы / 03</p>
+                <h2 id="benefit-manager-detail-title">Персональный менеджер на объект</h2>
+                <p class="service-detail-description">Персональный менеджер — контактное лицо по вопросам работы персонала на вашем объекте. С ним можно обсудить текущие задачи, уточнить требования и передать обратную связь. Порядок взаимодействия согласовываем в начале сотрудничества.</p>
+              </div>
+            </details>
           </article>
           <article class="advantage reveal">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="m24 4 19 10-19 10L5 14 24 4Z"/><path d="m12 20-7 4 19 10 19-10-7-4M12 30l-7 4 19 10 19-10-7-4"/></svg>
-            <h3>Гибкие условия<br>сотрудничества</h3>
+            <h3><button class="detail-trigger" type="button" data-service-details="benefit-terms-details" aria-haspopup="dialog" hidden>Гибкие условия<br>сотрудничества</button><span class="detail-static">Гибкие условия<br>сотрудничества</span></h3>
+            <span class="advantage-mark" aria-hidden="true">↗</span>
+            <details class="service-fallback point-fallback" id="benefit-terms-details">
+              <summary>Подробнее</summary>
+              <div class="service-detail-content">
+                <p class="eyebrow">Почему мы / 04</p>
+                <h2 id="benefit-terms-detail-title">Гибкие условия сотрудничества</h2>
+                <p class="service-detail-description">Обсуждаем сотрудничество с учётом задач вашего склада или производства. Уточняем объём работ, потребность в сотрудниках и требования к организации процессов. Подходящие условия согласовываем индивидуально.</p>
+              </div>
+            </details>
           </article>
         </div>
       </div>
