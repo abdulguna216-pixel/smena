@@ -1,0 +1,9 @@
+.DS_Store
+.vercel/
+dist/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+smena-site.zip
